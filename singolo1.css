@@ -1,0 +1,138 @@
+h1, h2, h3 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+body {
+    max-width: 1020px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 90px;
+    border-bottom: #323746 solid 6px;
+    background-color: #2d303a;
+}
+
+ul.navigation_list {
+    display: flex;
+    flex-direction: row;
+    width: 412px;
+    height: 12px;
+}
+
+.navigation_list li {
+    margin: 0 15px;
+}
+
+.navigation_list li a {
+    color: #FFF;
+    text-decoration: none;
+    font-family: 'Lato-Bold';
+    font-size: 12px;
+    line-height: 5px;
+}
+
+.logo {
+    width: 115px;
+    height: 20px;
+    margin-left: 40px;
+    font-family: 'Lato-Bold';
+    font-size: 25px;
+    line-height: 6px;
+    color: #FFF;
+    margin-right: auto;
+}
+
+/*SLIDER*/
+.slider {
+    width: 100%;
+    height: 600px;
+    border-bottom: #ea676b solid 6px;
+    background-color: #f06c64;
+}
+
+/*SERVICES*/
+.services {
+    width: 100%;
+    height: 502px;
+    background-color: #f2f2f2;
+    border-bottom: #FFF solid 5px;
+}
+
+.services>h2 {
+    padding-top: 67px;
+    padding-left: 39px;
+    margin-bottom: 31px;
+}
+.services>p {
+    padding-left: 39px;
+}
+
+.layout-3-column {
+    width: 950px;
+    height: 210px;
+    display: flex;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-left: 39px;
+    margin-top: 47px;
+}
+
+.services_item {
+    width: 300px;
+    height: 87px;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 35px;
+}
+
+.right_side {
+    width: 219px;
+}
+
+.right_side p {
+    font-family: 'Lato-Regular';
+}
+
+.right_side h2 {
+    font-family: 'Lato-Black';
+}
+
+.image {
+    width: 59px;
+    height: 59px;
+    padding-right: 20px;
+}
+
+.pen {
+    background: url('assets/img/pen.png') no-repeat;
+}
+
+.bulb {
+    background: url('assets/img/bulb.png') no-repeat;
+}
+
+.heart {
+    background: url('assets/img/heart.png') no-repeat;
+}
+
+.phone {
+    background: url('assets/img/phone.png') no-repeat;
+}
+
+.bubble {
+    background: url('assets/img/bubble.png') no-repeat;
+}
+
+.star {
+    background: url('assets/img/star.png') no-repeat;
+}
