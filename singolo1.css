@@ -9,13 +9,15 @@ p {
 body {
     max-width: 1020px;
     margin: 0 auto;
+    font-family: 'Lato Regular', sans-serif;
+    font-size: 16px;
 }
 
 header {
     display: flex;
     align-items: center;
     width: 100%;
-    height: 90px;
+    height: 89px;
     border-bottom: #323746 solid 6px;
     background-color: #2d303a;
 }
@@ -23,40 +25,127 @@ header {
 ul.navigation_list {
     display: flex;
     flex-direction: row;
-    width: 412px;
+    justify-content: space-between;
+    width: 371px;
     height: 12px;
 }
 
 .navigation_list li {
-    margin: 0 15px;
+    margin-top: -2px;
+    list-style-type: none;
+    
+}
+
+.navigation_list li a:hover {
+    color: #f06b70!important;
+    cursor: pointer;
+}
+
+.navigation_list li a.colored {
+   color: #f06c64;
 }
 
 .navigation_list li a {
     color: #FFF;
     text-decoration: none;
-    font-family: 'Lato-Bold';
+    letter-spacing: 0.1px;
     font-size: 12px;
     line-height: 5px;
 }
+
+.navigation_list li:not(:last-child)::after {
+    position: absolute;
+    content: "\2219";
+    font-size: 20px;
+    color: #494e62;
+    margin-left: 9px;
+  }
 
 .logo {
     width: 115px;
     height: 20px;
     margin-left: 40px;
-    font-family: 'Lato-Bold';
+    font-family: 'Lato Bold', sans-serif;
     font-size: 25px;
-    line-height: 6px;
+    line-height: 7px;
     color: #FFF;
-    margin-right: auto;
+    margin-right: 414px;
+    padding-top: 12px;
+    letter-spacing: -0.5px;
+}
+
+.logo span{
+    color: #f06c64;
 }
 
 /*SLIDER*/
 .slider {
     width: 100%;
-    height: 600px;
+    height: 594px;
     border-bottom: #ea676b solid 6px;
     background-color: #f06c64;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
 }
+
+.vertical_phone {
+    background: url('assets/img/iphone_vertical.png') no-repeat;
+    width: 242px;
+    height: 486px;
+    margin-right:15px;
+    margin-bottom: 3px;
+}
+
+.vertical_image {
+    width: 194px;
+    height: 339px;
+    background: url('assets/img/screen1.png') no-repeat;
+    margin-left: 11px;
+    margin-top: 62px;
+}
+
+.horisontal_phone {
+    background: url('assets/img/iphone_horisontal.png') no-repeat;
+    height: 242px;
+    width: 486px;
+    margin-bottom: 5px;
+}
+
+.horisontal_image {
+    width: 339px;
+    height: 194px;
+    background: url('assets/img/screen2.png') no-repeat;
+    margin-left: 57px;
+    margin-top: 11px;
+}
+
+.arrow_left {
+    background: url('assets/img/chev.png') no-repeat;
+    width: 16px;
+    height: 27px;
+    margin-left: 42px;
+    margin-bottom: 5px;
+}
+
+.arrow_right {
+    background: url('assets/img/chev2.png') no-repeat;
+    width: 16px;
+    height: 27px;
+    margin-right: 40px;
+    margin-bottom: 5px;
+}
+
+.arrow_right:hover {
+    background: url('assets/img/chev2h.png') no-repeat;
+}
+
+.arrow_left:hover {
+    background: url('assets/img/chevh.png') no-repeat;
+}
+
 
 /*SERVICES*/
 .services {
@@ -64,15 +153,26 @@ ul.navigation_list {
     height: 502px;
     background-color: #f2f2f2;
     border-bottom: #FFF solid 5px;
+    
 }
 
 .services>h2 {
-    padding-top: 67px;
-    padding-left: 39px;
-    margin-bottom: 31px;
+    font-family: 'Lato Black', sans-serif;
+    letter-spacing: -0.2px;
+    padding-top: 59px;
+    padding-left: 40px;
+    margin-bottom: 18px;
+    font-size: 30px;
+    color: #666d89;
 }
 .services>p {
-    padding-left: 39px;
+    font-family: 'Lato Light', sans-serif;
+    font-size: 18px;
+    text-align: justify;
+    line-height: 30px;
+    padding-left: 40px;
+    margin-right: 40px;
+    color: #767e9e;
 }
 
 .layout-3-column {
@@ -88,7 +188,7 @@ ul.navigation_list {
 }
 
 .services_item {
-    width: 300px;
+    width: 310px;
     height: 87px;
     display: flex;
     flex-direction: row;
@@ -97,14 +197,21 @@ ul.navigation_list {
 
 .right_side {
     width: 219px;
+    margin-top: -5px;
 }
 
 .right_side p {
-    font-family: 'Lato-Regular';
+    text-align: justify;
+    font-size: 12px;
+    color: #767e9e;
+    line-height: 21px;
 }
 
-.right_side h2 {
-    font-family: 'Lato-Black';
+.right_side h3 {
+    font-family: "Lato Black", sans-serif;
+    letter-spacing: -0.25px;
+    color: #666d89;
+    margin-bottom: 9px;
 }
 
 .image {
