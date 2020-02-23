@@ -193,6 +193,7 @@ ul.navigation_list {
     display: flex;
     flex-direction: row;
     padding-bottom: 35px;
+    margin-left: 2px;
 }
 
 .right_side {
@@ -209,8 +210,9 @@ ul.navigation_list {
 
 .right_side h3 {
     font-family: "Lato Black", sans-serif;
-    letter-spacing: -0.25px;
+    letter-spacing: -0.5px;
     color: #666d89;
+    margin-top: 1px;
     margin-bottom: 9px;
 }
 
