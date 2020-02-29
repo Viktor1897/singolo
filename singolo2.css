@@ -1,0 +1,246 @@
+h1, h2, h3 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+    font-family: 'Lato Light', sans-serif;
+    font-size: 18px;
+    color: #767e9e;
+}
+
+body {
+    max-width: 1020px;
+    margin: 0 auto;
+    font-family: 'Lato Regular', sans-serif;
+    font-size: 16px;
+}
+
+h2 {
+    font-family: 'Lato Black', sans-serif;
+    font-size: 30px;
+    letter-spacing: -0.23px;
+    color: #666d89;
+}
+
+/*PORTFOLIO*/
+.portfolio {
+    width: 100%;
+    height: 864px;
+    background-color: #2d303a;
+    border-bottom: #323746 solid 6px;
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio_container {
+    padding-left: 3px;
+    width: 942px;
+    height: 732px;
+    padding-top: 60px;
+}
+
+.portfolio_container>p {
+    margin-top: 22px;
+    margin-bottom: 15px;
+}
+
+.pictures_options {
+    margin-left: 1px;
+    width: 287px;
+    height: 22px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.pictures_options>a {
+    border: #666d89 solid 1px;
+    border-radius: 5px;
+    font-size: 12px;
+    text-align: center;
+    text-decoration: none;
+    color: #666d89;
+    padding: 2px 6px;
+}
+
+.pictures_options a:hover {
+    color: #FFF;
+    border: #fff solid 1px;
+}
+
+.pictures_options>a:first-child {
+    color: #fff;
+    border: #fff solid 1px;
+    padding-right: 7px;
+    margin-right: 1px;
+}
+
+
+.portfolio_pictures {
+    width: 940px;
+    height: 603px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 19px;
+}
+
+.picture {
+    width: 220px;
+    height: 187px;
+    margin-bottom: 20px;
+}
+
+.picture_1 {
+    background: url('assets/img/portfolio/image1.png') no-repeat;
+}
+
+.picture_2 {
+    background: url('assets/img/portfolio/image2.png') no-repeat;
+}
+
+.picture_3 {
+    background: url('assets/img/portfolio/image3.png') no-repeat;
+}
+
+.picture_4 {
+    background: url('assets/img/portfolio/image4.png') no-repeat;
+}
+
+.picture_5 {
+    background: url('assets/img/portfolio/image5.png') no-repeat;
+}
+
+.picture_6 {
+    background: url('assets/img/portfolio/image6.png') no-repeat;
+}
+
+.picture_7 {
+    background: url('assets/img/portfolio/image7.png') no-repeat;
+}
+
+.picture_8 {
+    background: url('assets/img/portfolio/image8.png') no-repeat;
+}
+
+.picture_9 {
+    background: url('assets/img/portfolio/image9.png') no-repeat;
+}
+
+.picture_10 {
+    background: url('assets/img/portfolio/image10.png') no-repeat;
+}
+
+.picture_11 {
+    background: url('assets/img/portfolio/image11.png') no-repeat;
+}
+
+.picture_12 {
+    background: url('assets/img/portfolio/image12.png') no-repeat;
+}
+
+/*About Us*/
+.about_us {
+    width: 100%;
+    height: 728px;
+    display: flex;
+    justify-content: center;
+    background-color: #f2f2f2;
+    border-bottom: #FFFFFF solid 6px;
+}
+
+.about_us_container{
+    width: 940px;
+    height: 595px;
+    padding-top: 59px;
+}
+
+.about_us_container>p {
+    margin-top: 18px;
+    margin-bottom: 45px;
+    text-align: justify;
+    line-height: 30px;
+    margin-left: 1px;
+}
+
+.employee_block {
+    width: 100%;
+    height: 480px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.employee {
+    width: 300px;
+    height: 490px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* РОВНЯЮ, ЦЕНТРАЛЬНЫЙ БЛОК*/
+.employee:nth-child(2) { 
+    margin-left: -1px;
+}
+/* РОВНЯЮ, последний БЛОК ссылок*/
+.employee:last-child .networks_links {
+    margin-left: -1px;
+}
+
+.photo {
+    width: 300px;
+    height: 300px;
+    padding-bottom: 15px;
+}
+
+.employee>h3 {
+    font-size: 18px;
+    font-family: 'Lato Black', sans-serif;
+    color: #666d89;
+    padding-bottom: 8px;
+    letter-spacing: -0.1px;
+}
+
+.employee>p {
+    font-size: 12px;
+    line-height: 21px;
+    text-align: justify;
+    padding-bottom: 7.5px;
+    font-family: 'Lato Regular', sans-serif;
+    word-spacing: -0.48px;
+}
+
+.networks_links {
+    padding-left: 1px;
+    width: 154px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+.networks_links li {
+    list-style-type: none;
+    margin-right: 8px;
+    width: 32px;
+    height: 32px;
+    border: #666d89 solid 0px;
+    border-radius: 50%;
+}
+
+.networks_links li:hover {
+    background-color: lightgray;
+}
+
+.adam {
+    background: url('assets/img/employee_photo/photo_1.png') no-repeat;
+}
+
+.desmond {
+    background: url('assets/img/employee_photo/photo_2.png') no-repeat;
+}
+
+.scolara {
+    background: url('assets/img/employee_photo/photo_3.png') no-repeat;
+}
