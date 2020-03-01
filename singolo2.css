@@ -87,6 +87,11 @@ h2 {
     margin-top: 19px;
 }
 
+/*СКРЫВАТЬ КАРТИНКИ ПОСЛЕ 12*/
+.picture:nth-child(12)~.picture{
+    display: none;
+}
+
 .picture {
     width: 220px;
     height: 187px;
@@ -139,6 +144,14 @@ h2 {
 
 .picture_12 {
     background: url('assets/img/portfolio/image12.png') no-repeat;
+}
+/*Добавил картинки, чтобы показать, что они не отображаются*/
+.picture_13 {
+    background: url('assets/img/portfolio/image1.png') no-repeat;
+}
+
+.picture_14 {
+    background: url('assets/img/portfolio/image2.png') no-repeat;
 }
 
 /*About Us*/
@@ -201,6 +214,10 @@ h2 {
     color: #666d89;
     padding-bottom: 8px;
     letter-spacing: -0.1px;
+    /*ИМЯ В ОДНУ СТРОКУ*/
+    text-overflow: ellipsis; /*Добавляем точечки*/
+    overflow: hidden; /* Обрезаем содержимое */
+    white-space: nowrap; /* Отменяем перенос текста */
 }
 
 .employee>p {
