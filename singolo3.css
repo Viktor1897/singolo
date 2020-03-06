@@ -73,7 +73,7 @@ input, textarea {
     
 }
 
-input::placeholder, textarea::placeholder {
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
     color: #f48c8f;
 }
 
