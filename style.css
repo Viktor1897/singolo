@@ -229,7 +229,6 @@ padding-left: 2px;
     color: #767e9e;
     line-height: 21px;
     font-family: 'Lato Regular', sans-serif;
-    background-color: #d6564f;
     /*Убираем лишний текст, выходящий за рамки блока*/
     display: -webkit-box;
     -webkit-line-clamp: 3;
