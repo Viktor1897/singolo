@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 h1, h2, h3 {
     margin: 0;
 }
@@ -355,29 +359,30 @@ padding-left: 2px;
     justify-content: space-between;
 }
 
-.pictures_options>a {
+.pictures_options>p {
     border: #666d89 solid 1px;
     border-radius: 5px;
     font-size: 12px;
     text-align: center;
-    text-decoration: none;
     color: #666d89;
     padding: 2px 6px;
 }
 
-.pictures_options a:hover {
+.pictures_options p:hover {
     color: #FFF;
     border: #fff solid 1px;
     cursor: pointer;
 }
 
-.pictures_options>a:first-child {
-    color: #fff;
-    border: #fff solid 1px;
+.pictures_options>p:first-child {
     padding-right: 7px;
     margin-right: 1px;
 }
 
+.pictures_options>p.selected {
+    color: #fff;
+    border: #fff solid 1px;
+}
 
 .portfolio_pictures {
     width: 940px;
@@ -394,10 +399,15 @@ padding-left: 2px;
     display: none;
 }
 
+.active_picture {
+    border: #F06C64 solid 5px;
+}
+
 .picture {
     width: 220px;
     height: 187px;
     margin-bottom: 20px;
+    box-sizing: border-box;
 }
 
 .picture_1 {
@@ -446,14 +456,6 @@ padding-left: 2px;
 
 .picture_12 {
     background: url('assets/img/portfolio/image12.png') no-repeat;
-}
-/*Добавил картинки, чтобы показать, что они не отображаются*/
-.picture_13 {
-    background: url('assets/img/portfolio/image1.png') no-repeat;
-}
-
-.picture_14 {
-    background: url('assets/img/portfolio/image2.png') no-repeat;
 }
 
 /*About Us*/

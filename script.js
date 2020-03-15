@@ -49,7 +49,39 @@ buttonRight.onclick = function () {
     if (displayRightOn) {
         displayRight.style.opacity = 0;
     } else {
-        displayRight.style.opacity = 1 ;
+        displayRight.style.opacity = 1;
     }
     displayRightOn = !displayRightOn;
+}
+
+//Portfolio, tabs
+
+let picturesOptions = document.querySelectorAll('.pictures_options > p');
+let portfolioImages = document.querySelectorAll('.picture')
+for (let element of picturesOptions) {
+    element.onclick = function (e) {
+        e.target.classList.add('selected');
+            for(let image of portfolioImages) {
+                image.style.order = Math.round(Math.random(12)*10);
+            }
+        for (let element of picturesOptions){
+            if (element != e.target) element.classList.remove('selected');
+        }
+}
+}
+
+//Portfolio, border
+for (let image of portfolioImages) {
+    console.log(image);
+    image.onclick = function (e) {
+        if (image.classList.contains('active_picture')){
+            image.classList.remove('active_picture');
+        } else {
+            image.classList.add('active_picture');
+        }
+        
+        for (let image of portfolioImages) {
+            if (image != e.target) image.classList.remove('active_picture');
+        }
+    }
 }
