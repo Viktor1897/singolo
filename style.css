@@ -138,6 +138,9 @@ header {
     height: 486px;
     margin-left: 54px;
     margin-bottom: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .vertical_image {
@@ -146,6 +149,7 @@ header {
     background: url('assets/img/screen1.png') no-repeat;
     margin-left: 11px;
     margin-top: 62px;
+    padding-right: 37px;
 }
 
 .horisontal_phone {
@@ -154,14 +158,33 @@ header {
     width: 486px;
     margin-bottom: 4px;
     margin-left: 71px;
+    display: flex;
+    align-items: center;
 }
 
 .horisontal_image {
     width: 339px;
     height: 194px;
     background: url('assets/img/screen2.png') no-repeat;
-    margin-left: 57px;
-    margin-top: 11px;
+    padding-bottom: 26px;
+}
+
+.button1 {
+    margin-right: 28px;
+    margin-top: 7px;
+}
+
+.button2 {
+    margin-bottom: 28px;
+    margin-left: 9px;
+    margin-right: 6px;
+}
+
+.phone_button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
 }
 
 .arrow_right {
