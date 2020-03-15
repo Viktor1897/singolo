@@ -7,3 +7,21 @@ for (element of menuElements) {
         }
 }
 }
+
+let arrows = document.querySelectorAll(".arrow");
+let slide1 = document.querySelector(".slide_1");
+let slide2 = document.querySelector(".slide_2");
+let visible = true;
+for (arrow of arrows) {
+    arrow.onclick = function () {
+        visible = !visible;
+        if (visible) {
+            slide2.style.display = 'none';
+            slide1.style.display = 'flex';
+        } else {
+            slide1.style.display = 'none';
+            slide2.style.display = 'block';
+        }
+        
+    }
+}

@@ -97,8 +97,31 @@ header {
     border-bottom: #ea676b solid 6px;
     background-color: #f06c64;
     display: flex;
-    flex-direction: row;
     align-items: center;
+}
+
+.slide_1 {
+    width: 900px;
+    height: 594px;
+    border-bottom: #ea676b solid 6px;
+    background-color: #f06c64;
+    display: flex;
+    flex-direction: row;
+    align-items: center;    
+    margin-top: 6px;
+}
+
+.slide_2 {
+    width: 900px;
+    height: 594px;
+    border-bottom: #ea676b solid 6px;
+    background: #f06c64 url('assets/img/slide2cut.jpg');
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 6px;
+    display: none;
 }
 
 .arrow_left {
@@ -145,7 +168,7 @@ header {
     background: url('assets/img/chev2.png') no-repeat;
     width: 16px;
     height: 27px;
-    margin-left: 53px;
+    margin-left: 6px;
     margin-bottom: 5px;
 }
 
